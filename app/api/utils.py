@@ -108,8 +108,6 @@ def convert_variants_format(original_variants):
 
 async def get_gemini_response(image_data):
     response = model.generate_content([ image_data[0], prompt])
-    #response = json.dump(response.text)
-    # print(eval(response.text.replace('json','')))
     print(response.text)
     text = response.text.replace('json','')
     print(text)
