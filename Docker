@@ -15,5 +15,4 @@ COPY . /app
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Use an entrypoint script to make use of Google Cloud's automatically provided $PORT
-ENTRYPOINT ["sh", "-c"]
-CMD uvicorn app.main:app --host 0.0.0.0 --port $PORT
+CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "$PORT"]
