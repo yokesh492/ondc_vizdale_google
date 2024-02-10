@@ -21,4 +21,5 @@ EXPOSE 8080
 
 # Use an entrypoint script to make use of Google Cloud's automatically provided $PORT
 ENTRYPOINT ["sh", "-c"]
-CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8080"]
+CMD uvicorn app.main:app --host 0.0.0.0 --port $PORT
+
