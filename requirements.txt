@@ -1,0 +1,15 @@
+fastapi
+SQLAlchemy
+google-generativeai
+bcrypt
+uvicorn
+pillow
+python-multipart
+psycopg2-binary
+google-cloud-storage
+passlib
+databases
+asyncpg
+pg8000
+cloud-sql-python-connector
+google-cloud
